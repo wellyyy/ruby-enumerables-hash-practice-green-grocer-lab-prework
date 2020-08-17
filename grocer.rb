@@ -2,8 +2,9 @@ require 'pry'
 def consolidate_cart(cart)
   result = {}
   cart.each_with_index do |item, index|
-    binding.pry
+    #binding.pry
     item.each do |food, info|
+      binding.pry
       if result[food]
         result[food][:count] += 1
       else
