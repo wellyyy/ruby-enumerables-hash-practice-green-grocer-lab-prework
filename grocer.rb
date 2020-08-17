@@ -4,7 +4,7 @@ def consolidate_cart(cart)
   cart.each_with_index do |item, index|
     #binding.pry
     item.each do |food, info|
-      binding.pry
+      #binding.pry
       if result[food]
         result[food][:count] += 1
       else
@@ -18,7 +18,7 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-
+  
 end
 
 def apply_clearance(cart)
