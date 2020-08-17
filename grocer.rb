@@ -1,12 +1,12 @@
 require 'pry'
 def consolidate_cart(cart)
-  consolidated = {}
+  result = {}
    cart.each do |contents|
      contents.each do |item, info|
-     if consolidated.include?(item)
-       consolidated[item][:count] += 1
+     if result.include?(item)
+       result[item][:count] += 1
      else
-       consolidated[item] = {
+       result[item] = {
            :price => info[:price],
            :clearance => info[:clearance],
            :count => 1
@@ -14,7 +14,7 @@ def consolidate_cart(cart)
      end
    end
  end
- consolidated
+ result
 end
 
 def apply_coupons(cart, coupons)
