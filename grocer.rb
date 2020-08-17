@@ -10,6 +10,7 @@ def consolidate_cart(cart)
          result[food][:count] = 1
       end
   end
+  result
 end
 
 def apply_coupons(cart, coupons)
