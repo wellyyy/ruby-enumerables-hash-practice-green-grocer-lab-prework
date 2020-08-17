@@ -2,7 +2,7 @@ require 'pry'
 def consolidate_cart(cart)
   result = {}
   cart.each_with_index do |item, index|
-    item.each do |food
+    item.each do |food, info|
   end
 
 end
