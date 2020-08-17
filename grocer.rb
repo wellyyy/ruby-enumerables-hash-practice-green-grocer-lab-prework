@@ -8,6 +8,7 @@ def consolidate_cart(cart)
       else
          result[food] = info
          result[food][:count] = 1
+       end
       end
   end
   result
