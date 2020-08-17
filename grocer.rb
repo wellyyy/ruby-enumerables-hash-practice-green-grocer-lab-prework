@@ -3,7 +3,9 @@ def consolidate_cart(cart)
   result = {}
   cart.each_with_index do |item, index|
     item.each do |food, info|
-      if result
+      if result[food]
+        
+      end
   end
 
 end
