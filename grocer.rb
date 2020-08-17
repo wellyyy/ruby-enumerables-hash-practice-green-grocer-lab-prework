@@ -35,7 +35,6 @@ def apply_coupons(cart, coupons)
      result[food] = info
    end
    result
-   binding.pry
 end
 
 def apply_clearance(cart)
