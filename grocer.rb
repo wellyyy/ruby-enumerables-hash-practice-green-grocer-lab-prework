@@ -5,6 +5,8 @@ def consolidate_cart(cart)
     item.each do |food, info|
       if result[food]
         result[food][:count] += 1
+      else
+        
       end
   end
 end
