@@ -2,6 +2,7 @@ require 'pry'
 def consolidate_cart(cart)
   result = {}
   cart.each_with_index do |item, index|
+    binding.pry
     item.each do |food, info|
       if result[food]
         result[food][:count] += 1
@@ -12,7 +13,7 @@ def consolidate_cart(cart)
       end
   end
   result
-  binding.pry
+  #binding.pry
 end
 
 def apply_coupons(cart, coupons)
