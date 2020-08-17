@@ -1,6 +1,7 @@
 require 'pry'
 def consolidate_cart(cart)
 result = {}
+
 end
 
 def apply_coupons(cart, coupons)
